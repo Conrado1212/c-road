@@ -1,0 +1,7 @@
+C:\Users\Konrad\source\repos\Croad\Croad\bin\Debug\Croad.exe.config
+C:\Users\Konrad\source\repos\Croad\Croad\bin\Debug\Croad.exe
+C:\Users\Konrad\source\repos\Croad\Croad\bin\Debug\Croad.pdb
+C:\Users\Konrad\source\repos\Croad\Croad\obj\Debug\Croad.csproj.AssemblyReference.cache
+C:\Users\Konrad\source\repos\Croad\Croad\obj\Debug\Croad.csproj.CoreCompileInputs.cache
+C:\Users\Konrad\source\repos\Croad\Croad\obj\Debug\Croad.exe
+C:\Users\Konrad\source\repos\Croad\Croad\obj\Debug\Croad.pdb
