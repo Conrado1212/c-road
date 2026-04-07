@@ -10,6 +10,24 @@ namespace Croad
     {
         static void Main(string[] args)
         {
+            double x, y, result;
+            Console.WriteLine("Enter in number 1: ");
+
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter in number 1: ");
+
+           y = Convert.ToDouble(Console.ReadLine());
+
+            String name = "KonraD";
+            int age = 28;
+
+            method method = new method();
+
+            method.methodd(name,age);
+
+             result =  method.Multiply(x,y);
+
             Array array = new Array();
 
             array.array();

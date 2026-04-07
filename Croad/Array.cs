@@ -18,7 +18,7 @@ namespace Croad
            cars[1] = "BMW";
            cars[2] = "VW";
 
-            foreach(var car in cars)
+            foreach(String car in cars)
             {
                 Console.WriteLine(car);
             }
