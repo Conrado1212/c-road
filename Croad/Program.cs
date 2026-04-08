@@ -10,6 +10,11 @@ namespace Croad
     {
         static void Main(string[] args)
         {
+
+
+
+
+
             double x, y, result;
             Console.WriteLine("Enter in number 1: ");
 
@@ -24,6 +29,8 @@ namespace Croad
 
             method method = new method();
 
+          double test =   method.CheckOut(3.99, 5.57, 15);
+            Console.WriteLine(test);
             method.methodd(name,age);
 
              result =  method.Multiply(x,y);

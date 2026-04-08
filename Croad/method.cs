@@ -23,5 +23,18 @@ namespace Croad
         {
             return a * b;
         }
+        public double Multiply(double a, double b, double c)
+        {
+            return a * b * c;
+        }
+        public double CheckOut(params double[] prices)
+        {
+            double total = 0;
+            foreach(double price in prices)
+            {
+                total += price;
+            }
+            return total;
+        }
     }
 }
