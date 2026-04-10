@@ -47,6 +47,61 @@ namespace Croad
             double faren = temp * 1.8 + 32;
             Console.WriteLine(faren);
         }
+        public void Old()
+        {
+            Console.WriteLine("Give me your name: ");
+            String name = Console.ReadLine();
+            Console.WriteLine("Give me your age: ");
+            int age = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Hi " + name + ", you are " + age + " years old");
+        }
+
+        static double Higher(params double[] c)
+        {
+            double max = c[0];
+            for (int i = 0; i < c.Length; i++)
+            {
+                if (c[i] > max)
+                {
+                    max = c[i];
+                }
+            }
+            return max;
+        }
+        static void Muilti()
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++)
+                {
+                    Console.Write(i * j + " ");
+                }
+                Console.WriteLine();
+            }
+
+        }
+        static void RandomNumber()
+        {
+            Random random = new Random();
+            int guess = 0;
+            int number = random.Next(1, 101);
+            while (guess != number)
+            {
+                Console.WriteLine("Guess a number");
+                guess = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Guess: " + guess);
+                if (guess > number)
+                {
+                    Console.WriteLine(guess + " is too high!");
+                }
+                else if (guess < number)
+                {
+                    Console.WriteLine(guess + " is too low!");
+                }
+            }
+            Console.WriteLine("Number: " + number);
+
+        }
     }
 }
