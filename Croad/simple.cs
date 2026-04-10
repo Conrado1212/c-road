@@ -137,5 +137,14 @@ namespace Croad
             }
             Console.WriteLine(max);
         }
+        static double[] Reverse(params double[] w)
+        {
+            double[] c = new double[w.Length];
+            for (int i = 0; i < w.Length; i++)
+            {
+                c[i] = w[w.Length - 1 - i];
+            }
+            return c;
+        }
     }
 }    
