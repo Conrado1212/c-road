@@ -146,5 +146,20 @@ namespace Croad
             }
             return c;
         }
+        static void sam()
+        {
+            Console.WriteLine("Write the sentance: ");
+            int sum = 0;
+            String words = Console.ReadLine();
+            char[] charArr = words.ToCharArray();
+            foreach (char h in charArr)
+            {
+                if (h == 'a' || h == 'ą' || h == 'e' || h == 'ę' || h == 'i' || h == 'o' || h == 'u' || h == 'ó' || h == 'y')
+                {
+                    sum++;
+                }
+            }
+            Console.WriteLine(sum);
+        }
     }
 }    
