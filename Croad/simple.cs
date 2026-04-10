@@ -122,5 +122,20 @@ namespace Croad
             }
             return avg = sum / c.Length;
         }
+        static void Word()
+        {
+            Console.WriteLine("Write the sentance: ");
+            String words = Console.ReadLine();
+            string[] splitWords = words.Split(' ');
+            String max = splitWords[0];
+            for (int i = 0; i < splitWords.Length; i++)
+            {
+                if (splitWords[i].Length > max.Length)
+                {
+                    max = splitWords[i];
+                }
+            }
+            Console.WriteLine(max);
+        }
     }
 }    
