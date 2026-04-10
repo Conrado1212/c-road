@@ -103,5 +103,24 @@ namespace Croad
             Console.WriteLine("Number: " + number);
 
         }
+        static int sum(int n)
+        {
+            int sum = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                sum += i;
+            }
+            return sum;
+        }
+        static double Average(params int[] c)
+        {
+            double avg = 0;
+            double sum = 0;
+            for (int i = 0; i < c.Length; i++)
+            {
+                sum += c[i];
+            }
+            return avg = sum / c.Length;
+        }
     }
-}
+}    
