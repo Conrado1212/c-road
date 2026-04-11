@@ -248,5 +248,35 @@ namespace Croad
             Console.WriteLine("Wrong data");
 
         }
+        static void rockScissorsGame()
+        {
+            String[] options = { "ROCK", "SCISSORS", "PAPER" };
+            Random random = new Random();
+            String computer = options[random.Next(options.Length)];
+            String player = "";
+            while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
+            {
+                Console.WriteLine("Enter your choice: ROCK Scissors PAPER");
+                player = Console.ReadLine().ToUpper();
+            }
+            Console.WriteLine("Player choose: " + player);
+            Console.WriteLine("Computer choose: " + computer);
+            if (player == computer)
+            {
+                Console.WriteLine("Its a draw");
+            }
+            else if ((player == "ROCK" && computer == "SCISSORS") ||
+               (player == "SCISSORS" && computer == "PAPER") ||
+               (player == "PAPER" && computer == "ROCK")
+           )
+            {
+                Console.WriteLine("Player won");
+            }
+            else
+            {
+                Console.WriteLine("Computer won");
+            }
+
+        }
     }
 }    
