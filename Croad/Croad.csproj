@@ -46,6 +46,8 @@
     <Compile Include="Array.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
+    <Compile Include="conditionTest.cs" />
+    <Compile Include="exc.cs" />
     <Compile Include="method.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

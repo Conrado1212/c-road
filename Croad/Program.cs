@@ -13,7 +13,8 @@ namespace Croad
 
 
 
-
+            exc exc = new exc();
+            exc.exceptionTest();
 
             double x, y, result;
             Console.WriteLine("Enter in number 1: ");
