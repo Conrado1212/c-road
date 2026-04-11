@@ -161,5 +161,92 @@ namespace Croad
             }
             Console.WriteLine(sum);
         }
+
+        static void calc()
+        {
+            do
+            {
+                double num1 = 0;
+                double num2 = 0;
+                double result = 0;
+                Console.WriteLine("-------------------");
+                Console.WriteLine("Caluclator Program:");
+                Console.WriteLine("-------------------");
+                Console.Write("Enter number1: ");
+
+                num1 = Convert.ToDouble(Console.ReadLine());
+
+                Console.Write("Enter number2: ");
+                num2 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Enter an option: ");
+                Console.WriteLine("\t+ : Add");
+                Console.WriteLine("\t- : Substract");
+                Console.WriteLine("\t* : Multiply");
+                Console.WriteLine("\t/ : Divide");
+
+                switch (Console.ReadLine())
+                {
+                    case "+":
+                        result = num1 + num2;
+                        Console.WriteLine($"Your result: {num1} + {num2} = {result}");
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        Console.WriteLine($"Your result: {num1} - {num2} = {result}");
+                        break;
+                    case "*":
+                        result = num1 * num2;
+                        Console.WriteLine($"Your result: {num1} * {num2} = {result}");
+                        break;
+                    case "/":
+                        result = num1 / num2;
+                        Console.WriteLine($"Your result: {num1} / {num2} = {result}");
+                        break;
+                    default:
+                        Console.WriteLine("That was not a valid char:");
+                        break;
+                }
+                Console.WriteLine("Would you lie to continue ? (Y/N)");
+
+
+            } while (Console.ReadLine().ToUpper() == "Y");
+            Console.WriteLine("Thanks for your calcution");
+
+        }
+        static List<(string user, string pass)> users = new List<(string, string)>();
+
+        static void sign()
+        {
+            Console.WriteLine("Enter your userName: ");
+            String name = Console.ReadLine();
+            Console.WriteLine("Enter your password: ");
+            String pass = Console.ReadLine();
+
+            users.Add((name.ToLower(), pass.ToLower()));
+
+            Console.WriteLine("Data saved");
+        }
+
+
+        static void login()
+        {
+            Console.Write("Enter your userName: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter your password: ");
+            string pass = Console.ReadLine();
+
+            foreach (var u in users)
+            {
+                if (u.user.ToLower() == name.ToLower() && u.pass.ToLower() == pass.ToLower())
+                {
+                    Console.WriteLine("Logged in!");
+                    return;
+                }
+            }
+
+            Console.WriteLine("Wrong data");
+
+        }
     }
 }    
